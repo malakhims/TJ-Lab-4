@@ -60,3 +60,66 @@ footer {
     width: 25px;
     vertical-align: middle;
 }
+
+
+.post {
+    background: #fff;
+    border: 2px solid #ffb6c1; 
+    box-sizing: border-box;
+    margin: 1em auto; /* Center alignment for posts */
+    padding: 1em;
+    position: relative;
+    width: 90%; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.post::before, .post::after {
+    border: 8px solid transparent;
+    content: '';
+    left: 40px; 
+    position: absolute;
+    top: 100%;
+}
+
+.post::before {
+    border-top: 8px solid #ffb6c1; /* Match border color */
+}
+
+.post::after {
+    border-top: 8px solid #fff; /* Matches post background */
+    margin-top: -3px;
+}
+
+.post img {
+    height: 25px;
+    vertical-align: middle; 
+}
+
+
+
+.pagedoll {
+    position: fixed;
+    width: 100px; 
+    height: auto;
+    z-index: 1000; 
+}
+
+.pagedoll-left {
+    left: 10px; 
+    bottom: 20px; 
+}
+
+.pagedoll-right {
+    right: 110px;
+    bottom: 20px; 
+}
+
+.pagedoll img {
+    width: 220%; /* Make the image responsive */
+    transition: transform 0.3s ease-in-out; 
+}
+
+.pagedoll img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
