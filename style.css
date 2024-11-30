@@ -123,3 +123,10 @@ footer {
 .pagedoll img:hover {
     transform: scale(1.1); /* Slightly enlarge on hover */
 }
+
+/* Hide pagedolls on mobile screens */
+@media screen and (max-width: 768px) {
+    .pagedoll {
+        display: none;
+    }
+}
