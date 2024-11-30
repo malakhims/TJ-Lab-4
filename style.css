@@ -4,6 +4,12 @@ body {
     margin: 0;
     padding: 0;
     color: #4a4a4a;
+    font-family: basis33;
+}
+
+@font-face {
+    font-family: basis33;
+    src: url(basis33.ttf);
 }
 header {
     background-color: #ffb6c1;
@@ -43,7 +49,7 @@ article {
     margin-bottom: 20px;
 }
 article h2 {
-    color: #ff69b4;
+    color: #e6adca;
     margin-top: 0;
 }
 article p {
@@ -96,7 +102,21 @@ footer {
     vertical-align: middle; 
 }
 
-
+.post::before {
+    content: '';
+    position: absolute;
+    left:5px; /* Position relative to the post */
+    top: 10%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('https://64.media.tumblr.com/eab95519e581ba3bed64a84d04d262e3/7ff15572939cc448-5f/s75x75_c1/d069e20862d35f6e6d1d99ccbc6119d65a56846f.gifv'); /* Replace with your icon URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%; /* Optional: Make it circular */
+    border: 0px solid #ffb6c1; /* Optional: Match border color */
+}
 
 .pagedoll {
     position: fixed;
